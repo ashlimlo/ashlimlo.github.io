@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Lim Portfolio</title>
+    <title>Ashley Lim's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -272,6 +272,26 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+
+        #back-to-top-btn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            font-size: 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 10px;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        #back-to-top-btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -408,6 +428,8 @@
         </div>
     </div>
 
+    <button id="back-to-top-btn" onclick="scrollToTop()">&#8679;</button>
+
     <script>
         let slideIndex = 0;
         const slides = document.querySelectorAll('.project-images img');
@@ -435,6 +457,24 @@
     
         // Show the first slide when the page loads
         showSlide(slideIndex);
+
+        // Scroll to top button functionality
+        const backToTopBtn = document.getElementById("back-to-top-btn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+        
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </html>
