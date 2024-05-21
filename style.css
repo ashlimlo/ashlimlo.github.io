@@ -56,6 +56,10 @@ main {
 .about-section {
     display: flex;
     align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-container {
@@ -65,9 +69,11 @@ main {
 }
 
 .profile-img {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 .about-text {
