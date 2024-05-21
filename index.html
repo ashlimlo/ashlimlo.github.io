@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Lim Portfolio</title>
+    <title>Ashley Lim's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -13,6 +13,7 @@
             scroll-behavior: smooth; /* Enables smooth scrolling */
         }
         body, html {
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -31,10 +32,15 @@
             top: 0;
             z-index: 1000;
         }
+        .topbar .logo-container {
+            display: flex;
+            align-items: center;
+        }
         .topbar .logo {
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
+            margin-right: 10px;
         }
         .topbar .nav-links {
             display: flex;
@@ -49,15 +55,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: calc(100vh - 60px); /* Adjust for top bar height */
             padding: 0;
             background: white;
-            margin-top: 60px; /* Adjust for top bar */
         }
         .container {
             display: flex;
             align-items: center;
             padding: 20px;
+            height: 100%;
         }
         .image-container {
             flex: 1;
@@ -134,10 +140,10 @@
 </head>
 <body>
     <div class="topbar">
-        <div class="logo">Ashley Lim</div>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/ashleylim26">
-                <img src="images/linkedin-icon.png" alt="LinkedIn">
+        <div class="logo-container">
+            <div class="logo">Ashley Lim</div>
+            <a href="https://www.linkedin.com/in/ashleylim26" class="social-link">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 24px; height: 24px;">
             </a>
         </div>
         <div class="nav-links">
@@ -154,22 +160,25 @@
                 <img src="images/ashley.png" alt="Ashley Lim">
             </div>
             <div class="text-container">
+                <h2>Hello, I'm </h2>
                 <h1>Ashley Lim</h1>
                 <h2>Data Science and Analytics Undergraduate</h2>
                 <div class="buttons">
                     <a href="cv/Ashley_Lim_CV.pdf" download>Download CV</a>
                     <a href="mailto:ashley_lim@u.nus.edu">Contact Me!</a>
                 </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/ashleylim26">
+                        <img src="images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <div id="about" class="section">
-        <h1>About Me!</h1>
-        <p>Hello! I'm Ashley Lim, a penultimate-year undergraduate majoring in Data Science and Analytics 
-            at the National University of Singapore. With a passion for data and a keen eye for detail, 
-            I have developed strong skills in data analysis, visualization, and automation through various internships and projects.
-        </p>
+        <h2>About</h2>
+        <p>Hello! I'm Ashley Lim, a Data Science and Analytics undergraduate at NUS. I have honed my skills in data analysis, visualization, and automation through internships at Shopee and foodpanda, where I optimized workflows, built dashboards, and conducted in-depth analyses. My technical expertise includes Python, R, SQL, Tableau, Google Looker Studio, and Power BI. I enjoy leveraging data to solve real-world problems and make impactful contributions. Outside academics, I led the RUNNUS fundraising event as Vice Project Director, promoting inclusivity for people with disabilities. I'm passionate about data and eager to continue growing in this dynamic field.</p>
     </div>
 
     <div id="experience" class="section">
