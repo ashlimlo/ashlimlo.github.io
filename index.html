@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Lim Portfolio</title>
+    <title>Ashley Lim's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -81,25 +81,16 @@
             perspective: 1000px;
         }
 
-        .front-image,
-        .back-image {
+        .image-container .image {
             position: absolute;
             width: 100%;
             height: 100%;
             transition: transform 0.5s ease;
-        }
-
-        .back-image {
-            transform: rotateY(180deg);
             backface-visibility: hidden;
         }
 
-        .front-image:hover {
+        .image-container:hover .image {
             transform: rotateY(180deg);
-        }
-
-        .back-image:hover {
-            transform: rotateY(0deg);
         }
         .text-container {
             flex: 2;
