@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Lim Portfolio</title>
+    <title>Ashley Lim's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
         }
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff; /* Changed background color to white */
         }
         .topbar {
             width: 100%;
@@ -49,6 +52,14 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 20px auto;
             max-width: 800px;
+        }
+        .main-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 0 20px;
+            background: white;
         }
         .container {
             display: flex;
@@ -130,7 +141,7 @@
         </div>
     </div>
 
-    <div id="about" class="section">
+    <div id="main" class="main-section">
         <div class="container">
             <div class="image-container">
                 <img src="images/ashley.png" alt="Ashley Lim">
@@ -150,6 +161,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About</h2>
+        <p>Details about you...</p>
     </div>
 
     <div id="experience" class="section">
