@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Lim's Portfolio</title>
+    <title>Ashley Lim Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -154,14 +154,13 @@
             line-height: 1.5;
         }
         .experience-card {
-            position: relative;
             background: #f9f9f9;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
             padding: 20px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
         }
         .experience-card img {
             border-radius: 50%;
@@ -169,18 +168,8 @@
             height: 50px;
             margin-right: 20px;
         }
-        .experience-card:hover {
-            transform: scale(1.05);
-        }
         .experience-content {
-            opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s, opacity 0.3s ease;
-        }
-        .experience-card.active .experience-content {
-            opacity: 1;
-            max-height: 200px; /* Adjust height as needed */
+            flex: 1;
         }
         .experience-title {
             font-size: 18px;
@@ -331,7 +320,7 @@
     <div id="experience" class="section">
         <h1>Experience</h1>
 
-        <div class="experience-card" onclick="toggleExperienceDetails(this)">
+        <div class="experience-card">
             <img src="images/mom-logo.png" alt="Ministry of Manpower Logo">
             <div class="experience-content">
                 <div class="experience-title">Data Analytics Intern</div>
@@ -343,12 +332,6 @@
                 </div>
             </div>
         </div>
-        
-        <script>
-            function toggleExperienceDetails(card) {
-                card.classList.toggle('active');
-            }
-        </script>
 
         <div class="experience-card">
             <img src="images/shopee-logo.png" alt="Shopee Logo">
