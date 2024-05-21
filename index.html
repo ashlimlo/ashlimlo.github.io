@@ -360,6 +360,10 @@
                     <p>Built and optimized a user-friendly dashboard and web application using HTML, CSS, JavaScript, and React for GXS Bank’s Customer Churn Analytics Platform, enhancing usability and accessibility for CRM and Marketing teams.</p>
                     <p> Implemented dynamic data visualizations and interactive UI components in React, significantly contributing to proactive customer retention strategies.</p>
                 </div>
+                <div class="navigation-arrows">
+                    <button class="prev" onclick="prevSlide()">❮</button>
+                    <button class="next" onclick="nextSlide()">❯</button>
+                </div>
             </div>
             <div class="project-card">
                 <img src="images/project5.png" alt="Project 2 Image 1">
@@ -372,5 +376,34 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.project-images img');
+    
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[n].style.display = 'block';
+        }
+    
+        function nextSlide() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            showSlide(slideIndex);
+        }
+    
+        function prevSlide() {
+            slideIndex--;
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            showSlide(slideIndex);
+        }
+    
+        // Show the first slide when the page loads
+        showSlide(slideIndex);
+    </script>
 </body>
 </html>
