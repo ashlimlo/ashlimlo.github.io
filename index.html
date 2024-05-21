@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Lim Portfolio</title>
+    <title>Ashley Lim's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -184,6 +184,66 @@
             font-size: 14px;
             color: #333;
         }
+        .projects-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .project-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+        .project-card .project-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .project-card:hover .project-info {
+            opacity: 1;
+        }
+        .project-info h3 {
+            margin: 10px 0;
+        }
+        .project-info p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .project-info a {
+            color: #ffffff;
+            text-decoration: none;
+            background: #000000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -288,8 +348,25 @@
 
     <div id="projects" class="section">
         <h1>Projects</h1>
-        <p>Details about your projects...</p>
+        <div class="projects-section">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Predictive Analytics for Customer Churn</h3>
+                    <p>GXS Bank, NUS DSA3101 Project</p>
+                    <p>Built and optimized a user-friendly dashboard and web application using HTML, CSS, JavaScript, and React for GXS Bank’s Customer Churn Analytics Platform, enhancing usability and accessibility for CRM and Marketing teams. Implemented dynamic data visualizations and interactive UI components in React, significantly contributing to proactive customer retention strategies.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Vice Project Director, NUS Students’ Sports Club, RUNNUS</h3>
+                    <p>Led a team of 20 to organize a fund-raising race event of 600 participants to raise awareness and promote inclusivity of people with disabilities. Updated the RunNUS full-stack database website using HTML/CSS, analyzed the budget request, forecasted spending and prepared a budgeting report.</p>
+                    <a href="https://runnus.nussportsclub.org/">View Project</a>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>
