@@ -136,6 +136,38 @@
             margin: 20px auto;
             max-width: 800px;
         }
+        .experience-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .experience-card img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+        .experience-content {
+            flex: 1;
+        }
+        .experience-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .experience-subtitle {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .experience-description {
+            font-size: 14px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -173,12 +205,67 @@
 
     <div id="about" class="section">
         <h2>About</h2>
-        <p>Hello! I'm Ashley Lim, a Data Science and Analytics undergraduate at the National University of Singapore. I have honed my skills in data analysis, visualization, and automation through internships at Shopee, foodpanda, and Ministry of Manpower where I optimized workflows, built dashboards, and conducted in-depth analyses. My technical expertise includes Python, R, SQL, Tableau, Google Looker Studio, and Power BI. I enjoy leveraging data to solve real-world problems and make impactful contributions. I'm passionate about data and eager to continue growing in this dynamic field.</p>
+        <p>Hello! I'm Ashley Lim, a Data Science and Analytics undergraduate at the National University of Singapore. I have honed my skills in data analysis, visualization, and automation through internships at Shopee, foodpanda, and Ministry of Manpower where I optimized workflows, built dashboards, and conducted in-depth analyses. I enjoy leveraging data to solve real-world problems and make impactful contributions. I'm passionate about data and eager to continue growing in this dynamic field.</p>
     </div>
 
     <div id="experience" class="section">
         <h2>Experience</h2>
-        <p>Details about your experience...</p>
+
+        <div class="experience-card">
+            <img src="images/mom-logo.png" alt="Ministry of Manpower Logo">
+            <div class="experience-content">
+                <div class="experience-title">Data Analytics Intern</div>
+                <div class="experience-subtitle">Occupational Safety and Health Division, Ministry of Manpower</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Automated reports and optimized queries using PrestoSQL to reduce manual data extraction time.</li>
+                        <li>Built user-friendly dashboards to showcase analytics performance and facilitate strategic planning.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <img src="images/shopee-logo.png" alt="Shopee Logo">
+            <div class="experience-content">
+                <div class="experience-title">Data Analyst Intern</div>
+                <div class="experience-subtitle">Regional Business Intelligence & Planning, Shopee</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Automated workflows using Data Suite, reducing manual data extraction time significantly.</li>
+                        <li>Built comprehensive dashboards for strategic planning using Google Looker Studio.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <img src="images/foodpanda-logo.png" alt="foodpanda Logo">
+            <div class="experience-content">
+                <div class="experience-title">Data Analyst Intern</div>
+                <div class="experience-subtitle">CIO Office, foodpanda</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Evaluated pricing strategies using time series analysis and SQL, leading to profit maximization in the Laos market.</li>
+                        <li>Developed a report consolidation program reducing the time spent on monthly review reports by 80%.</li>
+                        <li>Built dashboards for ASEAN and North Asian markets to present insights on market growth, KPIs, and pricing performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2>Technical Skills</h2>
+        <div class="experience-card">
+            <div class="experience-content">
+                <div class="experience-description">
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Python, R, SQL, Java, HTML/CSS</li>
+                        <li><strong>Data Visualization Tools:</strong> Tableau, Google Looker Studio, Power BI</li>
+                        <li><strong>Data Analysis Techniques:</strong> Time Series Analysis, Regression Analysis, Decision Tree Analysis, Cluster Analysis, Segmentation Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="projects" class="section">
