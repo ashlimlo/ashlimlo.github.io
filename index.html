@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Lim's Portfolio</title>
+    <title>Ashley Lim Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -79,6 +79,28 @@
             margin-right: 10px;
             cursor: pointer;
         }
+        .topbar .social-link img.linkedin-icon {
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .topbar .social-link img.linkedin-icon:hover {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
+
+        .topbar .mode-toggler {
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .topbar .mode-toggler:hover {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
+
+        body.dark-mode .topbar .social-link img.linkedin-icon:hover,
+        body.dark-mode .topbar .mode-toggler:hover {
+            filter: brightness(1.2);
+        }
         .main-section {
             display: flex;
             align-items: center;
@@ -118,7 +140,7 @@
         .hover-text {
             position: absolute;
             top: 410px; /* Adjust the position to ensure it's visible */
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(100, 100, 100, 0.7);
             color: white;
             padding: 10px 15px;
             border-radius: 10px;
