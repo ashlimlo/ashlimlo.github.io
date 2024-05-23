@@ -479,6 +479,11 @@
         .project-card:hover .project-info {
             opacity: 1;
         }
+        .project-card .navigation-arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }   
 
         .project-card .prev {
             left: -30px; /* Adjust the distance from the left edge */
@@ -488,6 +493,19 @@
             right: -30px; /* Adjust the distance from the right edge */
         }
 
+        .project-card .navigation-arrows button {
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            color: black;
+            font-size: 16px;
+            padding: 2px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .project-card .navigation-arrows button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
         .project-info h3 {
             margin: 10px 0;
         }
@@ -685,8 +703,12 @@
                     <h3>Predictive Analytics, GXS Bank</p>
                     <p>Built a user-friendly dashboard and web application using HTML, CSS, JavaScript, and React.</p>
                     <p>Implemented dynamic data visualizations and interactive UI components, significantly contributing to proactive customer retention strategies.</p>
-                    <a href="https://tinyurl.com/DSA3101Project>View Project</a>
+                    <a href="https://runnus.nussportsclub.org/">View Project</a>
 
+                </div>
+                <div class="navigation-arrows">
+                    <button class="prev" onclick="prevSlide()">❮</button>
+                    <button class="next" onclick="nextSlide()">❯</button>
                 </div>
             </div>
             <div class="project-card">
