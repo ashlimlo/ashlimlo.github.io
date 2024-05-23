@@ -448,18 +448,22 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             cursor: pointer;
         }
+
         body.dark-mode .project-card {
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
         }
-        .project-card img {
+
+        .project-card .project-images img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-        .project-card:hover img {
+
+        .project-card:hover .project-images img {
             transform: scale(1.1);
         }
+
         .project-card .project-info {
             position: absolute;
             top: 0;
@@ -476,43 +480,21 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
+
         .project-card:hover .project-info {
             opacity: 1;
         }
-        .project-card .navigation-arrows {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }   
 
-        .project-card .prev {
-            left: -30px; /* Adjust the distance from the left edge */
-        }
-
-        .project-card .next {
-            right: -30px; /* Adjust the distance from the right edge */
-        }
-
-        .project-card .navigation-arrows button {
-            background-color: rgba(255, 255, 255, 0.5);
-            border: none;
-            color: black;
-            font-size: 16px;
-            padding: 2px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .project-card .navigation-arrows button:hover {
-            background-color: rgba(255, 255, 255, 0.8);
-        }
         .project-info h3 {
             margin: 10px 0;
+            font-size: 18px; /* Ensure consistent font size */
         }
+
         .project-info p {
-            font-size: 10px;
+            font-size: 14px; /* Ensure consistent font size */
             margin: 10px 0;
         }
+
         .project-info a {
             color: #ffffff;
             text-decoration: none;
@@ -693,31 +675,32 @@
     </div>
 
     <div id="projects" class="section">
-        <h1>Projects</h1>
-        <div class="projects-section">
-            <div class="project-card">
-                <div class="project-images">
-                    <img src="images/project0.png" alt="Project 1">
-                </div>
-                <div class="project-info">
-                    <h3>Predictive Analytics, GXS Bank</p>
-                    <p>Built a user-friendly dashboard and web application using HTML, CSS, JavaScript, and React.</p>
-                    <p>Implemented dynamic data visualizations and interactive UI components, significantly contributing to proactive customer retention strategies.</p>
-                    <a href="https://tinyurl.com/DSA3101Project">View Project</a>
-
-                </div>
+    <h1>Projects</h1>
+    <div class="projects-section">
+        <div class="project-card">
+            <div class="project-images">
+                <img src="images/project0.png" alt="Project 1">
             </div>
-            <div class="project-card">
+            <div class="project-info">
+                <h3>Predictive Analytics, GXS Bank</h3>
+                <p>Built a user-friendly dashboard and web application using HTML, CSS, JavaScript, and React.</p>
+                <p>Implemented dynamic data visualizations and interactive UI components, significantly contributing to proactive customer retention strategies.</p>
+                <a href="https://tinyurl.com/DSA3101Project">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-images">
                 <img src="images/project5.png" alt="Project 2">
-                <div class="project-info">
-                    <h3>RUNNUS 2023 Website</h3>
-                    <p>Updated the full-stack database website using HTML/CSS.</p>
-                    <p>Led a team as the Vice Project Director to organize a fund-raising race event of 600 participants to raise awareness and promote inclusivity of people with disabilities.</p>
-                    <a href="https://runnus.nussportsclub.org/">View Project</a>
-                </div>
+            </div>
+            <div class="project-info">
+                <h3>RUNNUS 2023 Website</h3>
+                <p>Updated the full-stack database website using HTML/CSS.</p>
+                <p>Led a team as the Vice Project Director to organize a fund-raising race event of 600 participants to raise awareness and promote inclusivity of people with disabilities.</p>
+                <a href="https://runnus.nussportsclub.org/">View Project</a>
             </div>
         </div>
     </div>
+</div>
 
     <div id="contact" class="section contact-section">
         <h1>Contact Me</h1>
